@@ -994,11 +994,9 @@ input, textarea {
 }
 
 @media (max-width: 768px) {
-  .nav-resume {
-    padding: 4px 8px;
-    font-size: 11px;
-  }
-  .nav-resume .resume-icon { display: none; }
+    .nav-resume {
+        display: none;
+    }
 }
 
 /* ---- Nav right cluster (status badge + resume) ---- */
