@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Danial Shaikh — Software Engineer based in Toronto. Full-stack web developer building production WordPress, React, and Node.js systems." />
+  <title>Danial Shaikh — Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- Nav (injected by nav.js) -->
+  <div id="nav-slot"></div>
+
+  <!-- ===== HERO ===== -->
+  <main class="page">
+    <div class="container">
+      <div class="hero">
+        <div class="hero-grid">
+          <!-- LEFT: intro copy -->
+          <div class="hero-intro">
+            <div class="section-label">// SOFTWARE ENGINEER · TORONTO</div>
+            <h1 class="hero-name">Danial Shaikh</h1>
+            <h2 class="hero-tagline">builds the web<span class="punctuation">.</span></h2>
+            <p class="hero-blurb">
+              I ship code in production. The bugs ship themselves.
+              70+ sites built. 150+ bugs slain. Coffee consumed: untracked.
+            </p>
+            <div class="hero-cta">
+              <a href="projects.html" class="btn btn-primary">view projects →</a>
+              <a href="assets/danial-shaikh-resume.pdf" class="btn btn-coral" download>↓ download resume</a>
+            </div>
+          </div>
+
+          <!-- RIGHT: terminal (interactive) -->
+          <div class="hero-terminal">
+            <div class="terminal-chrome">
+              <div class="terminal-dot dot-red"></div>
+              <div class="terminal-dot dot-amber"></div>
+              <div class="terminal-dot dot-cyan"></div>
+              <div class="terminal-title">danial@portfolio: ~</div>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+              <!-- populated by terminal.js boot sequence -->
+            </div>
+            <div class="terminal-hint">
+              <span>type a command · try <code>help</code></span>
+              <span>↑↓ history · tab autocomplete</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+          <span>SCROLL ↓</span>
+          <span>v1.0 · last deploy today</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 Danial Shaikh</span>
+      <span>built from scratch · Toronto, ON</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

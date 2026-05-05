@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Danial Shaikh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <div id="nav-slot"></div>
+
+  <main class="page">
+    <div class="container">
+      <div class="section-label">// 04 — CONTACT</div>
+      <h2 class="section-title">Let's <span class="accent">build</span> something<span class="punctuation">.</span></h2>
+      <p class="contact-intro">
+        Open to full-time SWE roles, contracts, and interesting collaborations.
+        Reply within 24h, usually faster.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- LEFT: Terminal-styled form -->
+        <div class="hero-terminal contact-form-terminal">
+          <div class="terminal-chrome">
+            <div class="terminal-dot dot-red"></div>
+            <div class="terminal-dot dot-amber"></div>
+            <div class="terminal-dot dot-cyan"></div>
+            <div class="terminal-title">danial@portfolio: ~/contact</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">./compose-message.sh</span></div>
+            <div class="terminal-line ok" style="margin-bottom: 14px;">&gt; initiating contact protocol...</div>
+
+            <form class="contact-form" id="contact-form" action="mailto:danialshaikh.mail@proton.me" method="post" enctype="text/plain">
+              <div class="form-row">
+                <label><span class="form-prefix">▸</span> name:</label>
+                <input type="text" name="name" placeholder="your full name" required />
+              </div>
+              <div class="form-row">
+                <label><span class="form-prefix">▸</span> email:</label>
+                <input type="email" name="email" placeholder="your.email@domain.com" required />
+              </div>
+              <div class="form-row">
+                <label><span class="form-prefix">▸</span> message:</label>
+                <textarea name="message" placeholder="Tell me about the role, your team, or just say hi..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">$ send-message →</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- RIGHT: Direct channels -->
+        <div class="contact-channels">
+          <div class="meta-label" style="margin-top: 0;">// DIRECT CHANNELS</div>
+
+          <a href="mailto:danialshaikh.mail@proton.me" class="channel-card" style="display: block;">
+            <div class="channel-label">EMAIL</div>
+            <div class="channel-value cyan">danialshaikh.mail@proton.me</div>
+          </a>
+
+          <div class="channel-card">
+            <div class="channel-label">LOCATION</div>
+            <div class="channel-value">Toronto, ON · Canada</div>
+          </div>
+
+          <div class="meta-label">// SOCIAL</div>
+          <div class="socials-grid">
+            <a href="https://www.linkedin.com/in/danialshaikh-softeng" target="_blank" rel="noopener" class="social-btn linkedin">↗ LinkedIn</a>
+            <a href="https://github.com/Danial-Shaikh" target="_blank" rel="noopener" class="social-btn github">↗ GitHub</a>
+          </div>
+
+          <div class="contact-status">
+            <span style="color: var(--accent-cyan);">●</span> currently in Toronto · open to remote and hybrid roles across Canada and the US
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 Danial Shaikh</span>
+      <span>built from scratch · Toronto, ON</span>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
