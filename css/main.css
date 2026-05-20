@@ -1140,3 +1140,80 @@ input, textarea {
   border-radius: 3px;
   font-size: 10px;
 }
+/* Tech tags on project cards */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 14px;
+}
+
+.project-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    background: rgba(0, 255, 209, 0.08);
+    color: var(--accent-cyan);
+    border: 0.5px solid rgba(0, 255, 209, 0.2);
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+}
+
+.project-card.coral-tinted .project-tag {
+    background: rgba(255, 107, 74, 0.08);
+    color: var(--accent-coral);
+    border-color: rgba(255, 107, 74, 0.2);
+}
+
+/* On the featured card, push links to the bottom after tags */
+.project-card .project-links {
+    margin-top: auto;
+}
+
+/* "in progress" badge next to a title */
+.wip-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-amber);
+    border: 0.5px solid rgba(255, 170, 0, 0.4);
+    background: rgba(255, 170, 0, 0.08);
+    padding: 2px 7px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* "building now" text instead of a link */
+.project-soon {
+    font-size: 11px;
+    color: var(--accent-amber);
+    font-family: var(--font-mono);
+}
+
+/* Filter show/hide transition */
+.project-card {
+    transition: opacity var(--duration-medium) var(--ease-out), transform var(--duration-medium) var(--ease-out), border-color var(--duration-fast) var(--ease-out);
+}
+
+    .project-card.filtered-out {
+        display: none;
+    }
+
+/* Fade-in when a card re-appears after filtering */
+@keyframes cardIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card:not(.filtered-out) {
+    animation: cardIn var(--duration-medium) var(--ease-out);
+}

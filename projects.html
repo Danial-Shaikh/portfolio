@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Danial Shaikh</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   <meta name="theme-color" content="#0a0e1a" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
@@ -32,6 +33,7 @@
           <button class="filter-btn active" data-filter="all">all</button>
           <button class="filter-btn" data-filter="web">web</button>
           <button class="filter-btn" data-filter="ai">ai/ml</button>
+          <button class="filter-btn" data-filter="desktop">desktop</button>
           <button class="filter-btn" data-filter="mobile">mobile</button>
         </div>
       </div>
@@ -47,61 +49,117 @@
             across Canada. Built 85% solo from theme to deploy. Custom plugins, RESTful
             integrations, and zero downtime in 2+ years.
           </p>
+          <div class="project-tags">
+            <span class="project-tag">WordPress</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">REST APIs</span>
+          </div>
           <div class="project-links">
             <a href="https://www.macnet.ca" target="_blank" rel="noopener">↗ macnet.ca</a>
           </div>
         </div>
 
         <div class="project-card coral-tinted" data-category="ai">
-          <div class="project-meta">002 / AI · ML · WEB</div>
-          <div class="project-title">Family-Friendly Movie Filter</div>
+          <div class="project-meta">002 / AI · FULL-STACK · NEXT.JS</div>
+          <div class="project-title">ProShot Studio</div>
           <p class="project-desc">
-            AI-powered content filter that flags scenes by family-friendliness criteria.
-            <em>[full description coming soon]</em>
+            Full-stack AI headshot generator. Users pick an industry and tone; Claude crafts
+            a precision prompt, then fal.ai's Flux Pro renders 4 photorealistic headshots in
+            ~30 seconds. Two secure server-side API routes keep keys off the client.
           </p>
+          <div class="project-tags">
+            <span class="project-tag">Next.js 14</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">Claude AI</span>
+            <span class="project-tag">fal.ai</span>
+            <span class="project-tag">Vercel</span>
+          </div>
           <div class="project-links">
             <a href="#" target="_blank" rel="noopener">↗ view live</a>
           </div>
         </div>
       </div>
 
-      <!-- Row 2: Three smaller (setting wide for now tho) -->
-      <div class="projects-row row-wide">
-          <div class="project-card" data-category="mobile">
-              <div class="project-meta">003 / MOBILE</div>
-              <div class="project-title">Family Circle Tracker</div>
-              <p class="project-desc">
-                  Life360-style location app for family safety with geofencing and alerts.
-                  <em>[full description coming soon]</em>
-              </p>
-              <div class="project-links">
-                  <a href="#">↗ details</a>
-              </div>
+      <!-- Row 2: Three cards -->
+      <div class="projects-row row-three">
+        <div class="project-card" data-category="ai">
+          <div class="project-meta">003 / AI · FULL-STACK</div>
+          <div class="project-title">SceneShield AI</div>
+          <p class="project-desc">
+            Real-time family-friendly content filter for streaming. Detects objectionable
+            scenes and mutes, skips, blurs, or overlays warnings — client-side via a
+            Manifest V3 extension to stay DMCA-compliant. Pluggable AI detection layer.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">ASP.NET Core 8</span>
+            <span class="project-tag">React 18</span>
+            <span class="project-tag">EF Core</span>
+            <span class="project-tag">JWT</span>
           </div>
-
-
-
-
-
-          <!-- Row 3: Wide card -->
-          <div class="projects-row row-wide">
-              <div class="project-card row-wide-card coral-tinted" data-category="web">
-                  <div>
-                      <div class="project-meta">004 / WEB · INTERACTIVE · UOFT</div>
-                      <div class="project-title">COVID-19 Digital Review</div>
-                      <p class="project-desc" style="margin-bottom: 0;">
-                          Interactive world map exploring Indigenous Peoples' experiences during the
-                          pandemic. Built for UofT's Student Engagement Award. Click any country to
-                          dive into its story.
-                      </p>
-                  </div>
-                  <div class="project-links" style="justify-content: flex-end;">
-                      <a href="http://covid19digitalreview.com" target="_blank" rel="noopener">↗ covid19digitalreview.com</a>
-                  </div>
-              </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">↗ details</a>
           </div>
+        </div>
 
+        <div class="project-card" data-category="web">
+          <div class="project-meta">004 / PWA · SVG · GAME</div>
+          <div class="project-title">Dragon — Tame Your Fury</div>
+          <p class="project-desc">
+            Virtual pet PWA inspired by How to Train Your Dragon. A fully SVG-animated dragon
+            you feed, pet, and care for — it blinks, flutters its wings, and does a 720°
+            backflip when happy. Coin economy, 17 outfits, offline support.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">SVG</span>
+            <span class="project-tag">PWA</span>
+            <span class="project-tag">Service Worker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">↗ play it</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="desktop">
+          <div class="project-meta">005 / DESKTOP · PYTHON</div>
+          <div class="project-title">NumPick</div>
+          <p class="project-desc">
+            Windows desktop utility that turns any highlighted text into a calculator.
+            Right-click a column of numbers anywhere — Excel, Sheets, a PDF — to add,
+            subtract, multiply, divide, or average and copy the result in one click.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python 3</span>
+            <span class="project-tag">tkinter</span>
+            <span class="project-tag">pynput</span>
+            <span class="project-tag">pyperclip</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">↗ details</a>
+          </div>
+        </div>
       </div>
+
+      <!-- Row 3: Wide card — in progress -->
+      <div class="projects-row row-wide">
+        <div class="project-card row-wide-card" data-category="mobile">
+          <div>
+            <div class="project-meta">006 / MOBILE · IN PROGRESS</div>
+            <div class="project-title">Family Circle Tracker <span class="wip-badge">in progress</span></div>
+            <p class="project-desc" style="margin-bottom: 0;">
+              Life360-style location-sharing app for family safety, with geofencing and
+              real-time alerts when members arrive or leave saved places. Currently in
+              active development.
+            </p>
+          </div>
+          <div class="project-links" style="justify-content: flex-end;">
+            <span class="project-soon">building now →</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </main>
 
   <footer class="footer">
@@ -114,5 +172,6 @@
   <script src="js/nav.js"></script>
   <script src="js/cursor.js"></script>
   <script src="js/animations.js"></script>
+  <script src="js/projects.js"></script>
 </body>
 </html>
