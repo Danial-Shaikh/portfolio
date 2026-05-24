@@ -30,7 +30,7 @@
         </ul>
         <div class="nav-right">
           <div class="nav-status">available for hire</div>
-          <a href="assets/danial-shaikh-resume.pdf" download class="nav-resume"><span class="path-prefix">./</span>resume<span class="resume-icon">↓</span></a>
+          <a href="assets/Danial_Shaikh_Resume.pdf" download class="nav-resume"><span class="path-prefix">./</span>resume<span class="resume-icon">↓</span></a>
         </div>
       </div>
     </nav>
