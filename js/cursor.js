@@ -29,8 +29,8 @@
   });
 
   function animateRing() {
-    ringX += (mouseX - ringX) * 0.35;
-    ringY += (mouseY - ringY) * 0.35;
+    ringX += (mouseX - ringX) * 1;
+    ringY += (mouseY - ringY) * 1;
     ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
     requestAnimationFrame(animateRing);
   }
