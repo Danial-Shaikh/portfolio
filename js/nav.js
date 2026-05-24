@@ -1,6 +1,5 @@
 /* ============================================
    SHARED NAV — injected into every page
-   Edit this file to update nav across all pages
    ============================================ */
 
 (function () {
@@ -30,7 +29,7 @@
         </ul>
         <div class="nav-right">
           <div class="nav-status">available for hire</div>
-          <a href="assets/Danial_Shaikh_Resume.pdf" download class="nav-resume"><span class="path-prefix">./</span>resume<span class="resume-icon">↓</span></a>
+         <a href="assets/Danial_Shaikh_Resume.pdf" class="btn btn-coral" download>↓ download resume</a>
         </div>
       </div>
     </nav>
